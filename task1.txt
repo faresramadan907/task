@@ -1,0 +1,16 @@
+﻿static void Main(string[] args)
+{
+    int price_per_small_room = 25;
+    int price_per_large_room = 35;
+    int small_carpet = 0;
+    int large_carpet = 0;
+    Console.WriteLine("please enter number of small carpets: ");
+    small_carpet = int.Parse(Console.ReadLine());
+    Console.WriteLine("please enter number of large carpets: ");
+    large_carpet = int.Parse(Console.ReadLine());
+    int cost = (small_carpet * price_per_small_room) + (large_carpet * price_per_large_room);
+    double tax = cost * 0.06;
+    double total_estimate = cost + tax;
+    Console.WriteLine($"total price is : {total_estimate}$\n !!! this estimate is valid for 30 days");
+
+}  
